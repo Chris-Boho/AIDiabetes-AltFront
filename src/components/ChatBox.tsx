@@ -8,8 +8,8 @@ type ChatBoxProps = {
 
 export default function ChatBox({ messages, onSendMessage }: ChatBoxProps) {
     return (
-        <div className="flex items-center justify-center mt-8">
-            <div className="flex flex-col items-center border rounded-lg border-blue-700 p-4 h-96">
+        <div className="container mx-auto max-w-[700px] mt-8">
+            <div className="flex flex-col border rounded-lg border-blue-700 p-4 h-96">
                 <h1>ChatBox</h1>
                 <div className="divider"></div>
                 <ChatList messages={messages} />
