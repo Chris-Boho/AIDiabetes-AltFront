@@ -14,13 +14,13 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
     };
     return (
         <form onSubmit={handleSubmit}>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
                 <input
                     type="text"
                     value={message}
                     onChange={(e) => setMessages(e.target.value)}
                     placeholder="Enter message"
-                    className="input input-bordered input-primary w-full max-w-xs text-slate-100"
+                    className="input input-bordered input-primary w-full max-w-xs text-black bg-white"
                 />
                 <button type="submit" className="btn btn-primary">
                     Submit
